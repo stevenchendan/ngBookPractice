@@ -1,5 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="inventory-app">
+  <button class="center" (click)= "cloneProduct()">Clone</button>
   <products-list
     [productList]="products"
     (onProductSelected)="productWasSelected($event)">

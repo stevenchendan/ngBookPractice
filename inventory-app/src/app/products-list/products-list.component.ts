@@ -28,13 +28,16 @@ export class ProductsListComponent {
 
   constructor() {
     this.onProductSelected = new EventEmitter();
+    console.log('productList', this.productList);
   }
 
   clicked(product: Product): void {
     this.currentProduct = product;
     this.onProductSelected.emit(product);
   }
-
+  click2(products): void {
+    console.log('products', products);
+  }
   isSelected(product: Product): boolean {
     if (!product || !this.currentProduct) {
       return false;

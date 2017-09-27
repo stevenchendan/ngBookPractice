@@ -29,6 +29,13 @@ export class AppComponent {
         29.99)
     ];
   }
+
+  cloneProduct() {
+    console.log('this.product', this.products);
+    const num = Math.floor(Math.random() * this.products.length - 1);
+    this.products.push(this.products[num]);
+  }
+
   productWasSelected(product: Product): void {
     console.log('Product clicked: ', product);
   }
