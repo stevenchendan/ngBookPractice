@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ExampleDef} from "../example.model";
+import {ExampleDef} from '../example.model';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,8 +7,7 @@ import {ExampleDef} from "../example.model";
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  @Input('items')
-  items: ExampleDef[];
+  @Input('items') items: ExampleDef[];
 
   constructor() { }
 

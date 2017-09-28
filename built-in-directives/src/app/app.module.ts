@@ -18,6 +18,16 @@ import { NgClassExampleComponent } from './ng-class-example/ng-class-example.com
 import { IntroComponent } from './intro/intro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+const routes: Routes = [
+  { path: '', component: IntroComponent, pathMatch: 'full' },
+  { path: 'ng_for', component: NgForExampleComponent, pathMatch: 'full' },
+  { path: 'ng_switch', component: NgSwitchExampleComponent, pathMatch: 'full' },
+  { path: 'ng_style', component: NgStyleExampleComponent, pathMatch: 'full' },
+  { path: 'ng_class', component: NgClassExampleComponent, pathMatch: 'full' },
+  { path: 'ng_non_bindable', component: NgNonBindableExampleComponent, pathMatch: 'full' },
+];
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +41,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
