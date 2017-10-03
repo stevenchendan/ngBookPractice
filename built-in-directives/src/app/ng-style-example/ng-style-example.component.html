@@ -1,3 +1,40 @@
-<p>
-  ng-style-example works!
-</p>
+<div [style.background-color]="'yellow'">
+  Used fixed yellow background
+</div>
+<div [ngStyle]="{color: 'white', 'background-color': 'blue'}">
+  Used fixed white text on blue background
+</div>
+<div class="ui input">
+  <input type="text" name="color" value="{{color}}" #colorinput>
+</div>
+<div class="ui input">
+  <input type="text" name="fontSize" value="{{fontSize}}" #fontinput>
+</div>
+
+<button class="ui primary button" (click)="apply(colorinput.value, fontSize.value)">
+  Apply settings
+</button>
+<div>
+  <span [ngStyle]="{color: 'red'}" [style.font-size.px]="fontSize">
+    red text
+  </span>
+</div>
+<h4 class="ui horizontal divider header">
+  ngStyle with object property from variable
+</h4>
+
+<div>
+  <span [ngStyle]="{color: color}">
+    {{ color }} text
+  </span>
+</div>
+
+<h4 class="ui horizontal divider header">
+  style from variable
+</h4>
+
+<div
+  [style.background-color]="color"
+  style="color: white;">
+  {{ color }} background
+</div>
