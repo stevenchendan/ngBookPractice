@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-demo-form-sku',
   templateUrl: './demo-form-sku.component.html',
-  styleUrls: ['./demo-form-sku.component.css']
+  styles: []
 })
 export class DemoFormSkuComponent implements OnInit {
 
@@ -13,7 +13,7 @@ export class DemoFormSkuComponent implements OnInit {
   }
 
   onSubmit(form: any): void {
-    console.log('You submit value: ', form);
+    console.log('you submitted value:', form);
   }
 
 }
