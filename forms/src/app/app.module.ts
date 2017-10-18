@@ -7,6 +7,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DemoFormSkuWithBuilderComponent } from './demo-form-sku-with-builder/demo-form-sku-with-builder.component';
 import { DemoFormWithValidationsExplicitComponent } from './demo-form-with-validations-explicit/demo-form-with-validations-explicit.component';
 import { DemoFormWithValidationsShortHandComponent } from './demo-form-with-validations-short-hand/demo-form-with-validations-short-hand.component';
+import { DemoFormWithEventsComponent } from './demo-form-with-events/demo-form-with-events.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DemoFormWithValidationsShortHandComponent } from './demo-form-with-vali
     DemoFormSkuComponent,
     DemoFormSkuWithBuilderComponent,
     DemoFormWithValidationsExplicitComponent,
-    DemoFormWithValidationsShortHandComponent
+    DemoFormWithValidationsShortHandComponent,
+    DemoFormWithEventsComponent
   ],
   imports: [
     BrowserModule,
